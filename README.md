@@ -1,0 +1,2 @@
+# python
+Cheatsheet for python
