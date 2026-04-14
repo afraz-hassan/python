@@ -45,7 +45,7 @@ We will be using "re" python library which makes life alot easier in searching a
 
 ## Regex sub() and Verbose Method
 - The sub() regex method will substitute matches with some other text.
-- Using \1, 12, and so will substitute group 1, 2, etc in the regex pattern.
-- Passing re. VERBOSE lets you add whitespace and comments to the regex string passed to re.compile().
+- Using \1, \2, and so will substitute group 1, 2, etc in the regex pattern.
+- Passing re.VERBOSE lets you add whitespace and comments to the regex string passed to re.compile().
 - If you want to pass multiple arguments (re.DOTALL, re. IGNORECASE, re. VERBOSE), combine them with the | bitwise operator.
 
