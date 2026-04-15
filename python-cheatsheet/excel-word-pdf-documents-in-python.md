@@ -1,0 +1,35 @@
+# Excel, Word and pdf Documents in Python
+
+## Reading Excel Spreadsheets
+- The OpenPyXL third-party module handles Excel spreadsheets (xlsx files).
+- openpyxl.load_workbook(filename) returns a Workbook object.
+- get_sheet_names() and get_sheet_by_name() help get Worksheet objects.
+- The square brackets in sheet['A1'] get Cell objects.
+- Cell objects have a value member variable with the content of that cell.
+- The cell() method also returns a Cell object from a sheet.
+
+
+## Editing Excel Spreadsheets
+- You can view and modify a sheet's name with its title member variable.
+- Changing a cell's value is done using the square brackets, just like changing a value in a list or dictionary.
+- Changes you make to the workbook object can be saved with the save() method.
+
+## Reading and Editing PDF file Documents
+- The PyPDF2 module can read and write PDFs.
+- Opening a PDF is done by calling open) and passing the file object to PdfFileReader().
+- A Page object can be obtained from the PDF object with the getPage ) method.
+- The text from a Page object is obtained with the extractText) method, which can be imperfect.
+- New PDFs can be made from PdfFileWriter().
+- New pages can be appended to a writer object with the addPage) method.
+- Call the write() method to save its changes.
+
+## Reading and Editing Word Documents
+- Python-Docx can read and write .doc Word files.
+- Open a Word file with docx.Document()
+- Access one of the Paragraph objects from the paragraphs member variable, which is a list of Paragraph objects.
+- Paragraph objects have a text member variable containing the text as a string value.
+- Paragraphs are composed of "runs". The runs member variable of a Paragraph object contains a list of Run objects.
+- Run objects also have a text member variable.
+- Run objects have a bold, italic, and underline member variables which can be set to True or False.
+- Paragraph and run objects have a style member variable that can be set to one of Word's built-in styles.
+- Word files can be created by calling add_paragraph() and add_run() to append text content.
